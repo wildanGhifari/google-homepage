@@ -8,3 +8,19 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+}
+nav li a:hover {
+    text-decoration: underline;
+}
