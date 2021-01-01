@@ -40,7 +40,7 @@ nav {
 
 .nav-container li{
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 8px;
 }
 
 .nav-link {
@@ -52,10 +52,15 @@ nav {
 .nav-link .material-icons {
     height: 30px;
     margin-top: 5px;
+    color: var(--gray2) !important;
+}
+.nav-link .material-icons:hover {
+    height: 30px;
+    margin-top: 5px;
+    color: var(--gray3) !important;
 }
 
 .nav-link a img {
-    border: solid 1px green;
     border-radius: 50%;
     height: 34px;
 }
@@ -64,9 +69,45 @@ nav {
 
 .main-container {
     text-align: center;
-    padding: 10% 30%;
+    padding: 10% 0;
 }
 
+.search-box-container {
+    margin-top: 52px;
+}
+
+.search-box {
+    width: 40%;
+    margin: auto;
+}
+
+.search-box form {
+    display: flex;
+    border-radius: 50px;
+    box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.search-box form:hover {
+    box-shadow: 0 1.5px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.search-box button {
+    background-color: #fff;
+    padding: 13px 15px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+}
+.search-box button .fa-search {
+    color: var(--gray1);
+}
+
+.search-box input{
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    font-size: 16px;
+    font-weight: lighter;
+}
 
 @media (max-width: 1200px){
     
