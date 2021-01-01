@@ -3,6 +3,7 @@
 :root{
     --blue: #4285F4;
     --whitegray: #f8f9fa;
+    --whitegray1: #f2f2f2;
     --gray1: #dadce0;
     --gray2: #848484;
     --gray3: #4c4c4c;
@@ -21,7 +22,6 @@ body {
 li, a {
     font-weight: 400;
     font-size: 13px;
-    color: #222222;
     text-decoration: none;
 }
 
@@ -50,6 +50,10 @@ nav {
     align-items: center;
 }
 
+.nav-link a {
+    color: #222222;
+}
+
 .nav-link .material-icons {
     height: 30px;
     margin-top: 5px;
@@ -70,7 +74,7 @@ nav {
 
 .main-container {
     text-align: center;
-    padding: 10% 0;
+    padding: 8% 0;
 }
 
 .search-box-container {
@@ -116,7 +120,7 @@ nav {
     border: solid 1px var(--whitegray);
     border-radius: 4px;
     color: #3c4043;
-    margin: 11px 4px;
+    margin: 4px;
     padding: 0 16px;
     font-size: 14px;
     line-height: 27px;
@@ -127,6 +131,41 @@ nav {
 
 .centerBtn button:hover {
     border: solid 1px var(--gray1);
+}
+
+.langOffer {
+    padding: 24px 0;
+}
+
+.langOffer small{
+    display: inline-flex;
+}
+.langOffer small a{
+    margin: 0 10px;
+}
+
+
+.footer-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--whitegray1);
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li{
+    display: inline;
+    padding: 8px 16px;
+}
+
+.footer-links a {
+    color: #222222;
+    font-size: 14px;
+    line-height: 40px;
 }
 
 @media (max-width: 1200px){
