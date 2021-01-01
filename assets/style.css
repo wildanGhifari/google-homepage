@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
 
 :root{
     --blue: #4285F4;
-    --gray1: #bcbcbc;
+    --whitegray: #f8f9fa;
+    --gray1: #dadce0;
     --gray2: #848484;
     --gray3: #4c4c4c;
 }
@@ -14,7 +15,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: arial,sans-serif;
 }
 
 li, a {
@@ -74,6 +75,7 @@ nav {
 
 .search-box-container {
     margin-top: 52px;
+    margin-bottom: 30px;
 }
 
 .search-box {
@@ -107,6 +109,24 @@ nav {
     border-radius: 0 50px 50px 0;
     font-size: 16px;
     font-weight: lighter;
+}
+
+.centerBtn button {
+    background-color: var(--whitegray);
+    border: solid 1px var(--whitegray);
+    border-radius: 4px;
+    color: #3c4043;
+    margin: 11px 4px;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    cursor: pointer;
+}
+
+.centerBtn button:hover {
+    border: solid 1px var(--gray1);
 }
 
 @media (max-width: 1200px){
